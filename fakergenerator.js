@@ -1,6 +1,6 @@
 const faker = require('faker')
 
-exports.generateClient = () => {
+module.exports.generateClient = () => {
     const firstname = faker.name.firstName()
     const lastname = faker.name.lastName()
     const email = faker.internet.email(firstname, lastname)
